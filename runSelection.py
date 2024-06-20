@@ -17,7 +17,7 @@ import numpy as np
 #-------------------------------------------------------------------------------------
 # Main Setup
 #-------------------------------------------------------------------------------------
-selection = 'Test'
+selection = 'NanoAODTeste'
 analysis = 'HHDM'
 treeName = 'Events'
 LumiWeights = 1
@@ -51,7 +51,7 @@ analysis_parameters = {
 }
 
 corrections = {  # 0-don't apply, 1-apply
-'PILEUP_WGT                 ': 1,
+'PILEUP_WGT                 ': 0,
 'ELECTRON_ID_WGT            ': 1,
 'MUON_ID_WGT                ': 1,
 'JET_PUID_WGT               ': 1,
@@ -75,11 +75,11 @@ lateral_systematics = {
 'JER': [28, 2, [], []],
 'UncMET': [29, 2, [], []],
 'Recoil': [30, 4, ['02'], []],
-'JES': [41, 2, [], ['Total']],
+#'JES': [41, 2, [], ['Total']],
 }
 
 vertical_systematics = {
-'Pileup': [50, 2, [], []],
+#'Pileup': [50, 2, [], []],
 'EleID': [51, 2, [], []],
 'MuID': [52, 2, [], []],
 'JetPU': [53, 2, [], []],
@@ -113,49 +113,49 @@ from Bkg import *
 from Data import *
 datasets = []
 
-datasets.extend(Data_Lep_preVFP_16)
+#datasets.extend(Data_Lep_preVFP_16)
 #datasets.extend(Data_MET_preVFP_16)
 datasets.extend(Signal_preVFP_16)
-datasets.extend(DYPt50ToInf_preVFP_16)
-datasets.extend(DYPt0To50_preVFP_16)
-datasets.extend(TTFullLep_preVFP_16)
-datasets.extend(TTSemiLep_preVFP_16)
-datasets.extend(ST_preVFP_16)
-datasets.extend(VZ_preVFP_16)
-datasets.extend(ResidualSM_preVFP_16)
+#datasets.extend(DYPt50ToInf_preVFP_16)
+#datasets.extend(DYPt0To50_preVFP_16)
+#datasets.extend(TTFullLep_preVFP_16)
+#datasets.extend(TTSemiLep_preVFP_16)
+#datasets.extend(ST_preVFP_16)
+#datasets.extend(VZ_preVFP_16)
+#datasets.extend(ResidualSM_preVFP_16)
 
-datasets.extend(Data_Lep_postVFP_16)
+#datasets.extend(Data_Lep_postVFP_16)
 #datasets.extend(Data_MET_postVFP_16)
 datasets.extend(Signal_postVFP_16)
-datasets.extend(DYPt50ToInf_postVFP_16)
-datasets.extend(DYPt0To50_postVFP_16)
-datasets.extend(TTFullLep_postVFP_16)
-datasets.extend(TTSemiLep_postVFP_16)
-datasets.extend(ST_postVFP_16)
-datasets.extend(VZ_postVFP_16)
-datasets.extend(ResidualSM_postVFP_16)
+#datasets.extend(DYPt50ToInf_postVFP_16)
+# datasets.extend(DYPt0To50_postVFP_16)
+# datasets.extend(TTFullLep_postVFP_16)
+# datasets.extend(TTSemiLep_postVFP_16)
+# datasets.extend(ST_postVFP_16)
+# datasets.extend(VZ_postVFP_16)
+# datasets.extend(ResidualSM_postVFP_16)
 
-datasets.extend(Data_Lep_17)
-#datasets.extend(Data_MET_17)
-datasets.extend(Signal_17)
-datasets.extend(DYPt50ToInf_17)
-datasets.extend(DYPt0To50_17)
-datasets.extend(TTFullLep_17)
-datasets.extend(TTSemiLep_17)
-datasets.extend(ST_17)
-datasets.extend(VZ_17)
-datasets.extend(ResidualSM_17)
+# datasets.extend(Data_Lep_17)
+# #datasets.extend(Data_MET_17)
+# datasets.extend(Signal_17)
+# datasets.extend(DYPt50ToInf_17)
+# datasets.extend(DYPt0To50_17)
+# datasets.extend(TTFullLep_17)
+# datasets.extend(TTSemiLep_17)
+# datasets.extend(ST_17)
+# datasets.extend(VZ_17)
+# datasets.extend(ResidualSM_17)
 
-datasets.extend(Data_Lep_18)
-#datasets.extend(Data_MET_18)
-datasets.extend(Signal_18)
-datasets.extend(DYPt50ToInf_18)
-datasets.extend(DYPt0To50_18)
-datasets.extend(TTFullLep_18)
-datasets.extend(TTSemiLep_18)
-datasets.extend(ST_18)
-datasets.extend(VZ_18)
-datasets.extend(ResidualSM_18)
+# datasets.extend(Data_Lep_18)
+# #datasets.extend(Data_MET_18)
+# datasets.extend(Signal_18)
+# datasets.extend(DYPt50ToInf_18)
+# datasets.extend(DYPt0To50_18)
+# datasets.extend(TTFullLep_18)
+# datasets.extend(TTSemiLep_18)
+# datasets.extend(ST_18)
+# datasets.extend(VZ_18)
+# datasets.extend(ResidualSM_18)
 
 
 #-------------------------------------------------------------------------------------
