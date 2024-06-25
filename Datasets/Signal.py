@@ -66,10 +66,10 @@ for period,year,path in zip(periods,years,paths):
         #["Signal_2000_1900_"+period]         + [year+'9938'+APVID, path+"Signal_2000_1900.txt"],
     ]
 
-    if year == "18":
-        Signal.append(["Signal_1000_600_"+period]          + [year+'9918'+APVID, path+"Signal_1000_600.txt"])
-    else:
-        Signal.append(["Signal_1000_600_"+period]          + [year+'0118'+APVID, path+"Signal_1000_600.txt"])
+   # if year == "18":
+   #     Signal.append(["Signal_1000_600_"+period]          + [year+'9918'+APVID, path+"Signal_1000_600.txt"])
+   # else:
+   #     Signal.append(["Signal_1000_600_"+period]          + [year+'0118'+APVID, path+"Signal_1000_600.txt"])
         
     if period == "APV_16":
         Signal_preVFP_16 = Signal
