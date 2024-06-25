@@ -52,18 +52,18 @@ analysis_parameters = {
 
 corrections = {  # 0-don't apply, 1-apply
 'PILEUP_WGT                 ': 0,
-'ELECTRON_ID_WGT            ': 1,
-'MUON_ID_WGT                ': 1,
-'JET_PUID_WGT               ': 1,
-'BTAG_WGT                   ': 1,
-'TRIGGER_WGT                ': 1,
-'PREFIRING_WGT              ': 1,
-'JER_CORR                   ': 1,
-'MET_XY_CORR                ': 1,
-'MET_RECOIL_CORR            ': 1,
-'TOP_PT_WGT                 ': 1,
-'W_PT_WGT                   ': 1,
-'MUON_ROC_CORR              ': 1,
+#'ELECTRON_ID_WGT            ': 1,
+#'MUON_ID_WGT                ': 1,
+#'JET_PUID_WGT               ': 1,
+#'BTAG_WGT                   ': 1,
+#'TRIGGER_WGT                ': 1,
+#'PREFIRING_WGT              ': 1,
+#'JER_CORR                   ': 1,
+#'MET_XY_CORR                ': 1,
+#'MET_RECOIL_CORR            ': 1,
+#'TOP_PT_WGT                 ': 1,
+#'W_PT_WGT                   ': 1,
+#'MUON_ROC_CORR              ': 1,
 }
 
 
@@ -72,26 +72,26 @@ corrections = {  # 0-don't apply, 1-apply
 #-------------------------------------------------------------------------------------
 lateral_systematics = {
 'CV': [0, 1, [], []],
-'JER': [28, 2, [], []],
-'UncMET': [29, 2, [], []],
-'Recoil': [30, 4, ['02'], []],
+#'JER': [28, 2, [], []],
+#'UncMET': [29, 2, [], []],
+#'Recoil': [30, 4, ['02'], []],
 #'JES': [41, 2, [], ['Total']],
 }
 
 vertical_systematics = {
 #'Pileup': [50, 2, [], []],
-'EleID': [51, 2, [], []],
-'MuID': [52, 2, [], []],
-'JetPU': [53, 2, [], []],
-'BTag': [54, 8, [], ['bc', 'light', 'bc_fc', 'light_fc']],
-'Trig': [58, 2, [], []],
-'PreFir': [59, 2, [], []],
-'PDF': [60, 100, [], []],
-'Scales': [62, 7, [], []],
-'ISR': [63, 2, [], []],
-'FSR': [64, 2, [], []],
-'TopPt': [65, 1, [], []],
-'WPt': [66, 1, [], []],
+#'EleID': [51, 2, [], []],
+#'MuID': [52, 2, [], []],
+#'JetPU': [53, 2, [], []],
+#'BTag': [54, 8, [], ['bc', 'light', 'bc_fc', 'light_fc']],
+#'Trig': [58, 2, [], []],
+#'PreFir': [59, 2, [], []],
+#'PDF': [60, 100, [], []],
+#'Scales': [62, 7, [], []],
+#'ISR': [63, 2, [], []],
+#'FSR': [64, 2, [], []],
+#'TopPt': [65, 1, [], []],
+#'WPt': [66, 1, [], []],
 }
 
 
